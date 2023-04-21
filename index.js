@@ -47,20 +47,20 @@ btnSubscribe.addEventListener("click", function (e) {
   }
 });
 
-// const reveal = function(e){
-//     console.log(e)
-//     const [entry] = e;
-//     if (!entry.isIntersecting) return;
-//     entry.target.classList.remove('invisible')
-//     entry.target.classList.add('visible')
-//     observer.unobserve(entry.target)
+const reveal = function(e){
+    console.log(e)
+    const [entry] = e;
+    if (!entry.isIntersecting) return;
+    entry.target.classList.remove('invisible')
+    entry.target.classList.add('visible')
+    observer.unobserve(entry.target)
 
 
-// }
+}
 
-// const observer = new IntersectionObserver(reveal, {root: null, threshold:0.4})
+const observer = new IntersectionObserver(reveal, {root: null, threshold:0.4})
 
-// sections.forEach(function(sec){
-//     observer.observe(sec);
-//     sec.classList.add("invisible")
-// })
+sections.forEach(function(sec){
+    observer.observe(sec);
+    sec.classList.add("invisible")
+})
