@@ -1,0 +1,49 @@
+.u-center{
+    text-align: center;
+    
+}
+
+.u-left{ text-align: left;}
+
+
+.active{
+    display: block;
+  
+}
+
+.hidden{
+    display: none;
+}
+
+.invisible{
+    opacity: 0;
+}
+
+.visible{
+    opacity: 1;
+    animation: slideIn 1s linear;
+   
+}
+
+
+@keyframes showUp{
+    from{
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes slideIn{
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

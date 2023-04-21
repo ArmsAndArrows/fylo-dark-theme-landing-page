@@ -1,0 +1,88 @@
+// font-family: 'Raleway', sans-serif;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+.cta, input {
+    font-family: "Raleway", sans-serif;
+    color: $color-white;
+}
+
+p {
+    color: $color-white;
+}
+
+///HEADINGS
+.heading-first {
+    font-size: clamp(2rem, 4vw + 1rem, 4rem);
+    line-height: 1.4;
+    word-spacing: -0.1rem;
+}
+.heading-second {
+    font-size: clamp(1.5rem, 2vw + 1rem, 2rem);
+}
+.heading-third {
+    font-size: clamp(1.2rem, 2vw + 1rem, 4rem);
+}
+
+.heading-testimonial {
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: 1px;
+    
+}
+.heading-promo{
+    font-size: clamp(1.5rem, 2vw + 1rem, 3.1rem);
+    word-spacing: 3px;
+}
+
+///PARAGRAPHS
+///
+p {
+    color: rgba($color-white, 0.7);
+}
+.paragraph-intro {
+    font-size: clamp(1rem, 1vw + 1rem, 2rem);
+    
+}
+.paragraph-subscribe{
+    font-size: clamp(1rem, 1vw + 1rem, 1.4rem);
+    color: $color-white;   
+}
+.paragraph-features {
+    font-size: clamp(1rem, 1vw + 1rem, 1.4rem);
+}
+.paragraph-promo {
+    font-size: clamp(1rem, 1vw + 1rem, 1.5rem);
+}
+.paragraph-testimonial {
+    font-size: clamp(1rem, 1vw + 0.5rem, 1.4rem);
+    line-height: 1.8;
+    @media only screen and (min-width: $bp-m) {
+        line-height: 1.5;
+    }
+    
+}
+
+
+
+.cta {
+    font-size: clamp(1rem, 1vw + 1rem, 1.6rem);
+    font-weight: $ft-semibold;
+    padding: clamp(1.4rem, 2vw, 1.6rem) clamp(8.2rem, 9vw + 0.5rem, 9.5rem);
+    background: linear-gradient(90deg, $color-cyan, $color-blue);
+    border-radius: 25px;
+    z-index: 50;
+    transition: all 0.2s ease;
+    box-shadow: 0 2rem 2rem rgba($color-cyan, 0.1);
+    &:hover{
+        filter: brightness(115%);
+
+    }
+   
+    &--free{
+        font-size: clamp(1rem, 1vw + 1rem, 1.4rem);
+        padding: clamp(1.4rem, 2vw, 1.6rem) 0;
+    }
+}
