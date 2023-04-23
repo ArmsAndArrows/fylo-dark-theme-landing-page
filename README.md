@@ -1,4 +1,4 @@
-# HTML/CSS Fylo Landing Page
+# Fylo Landing Page
 
 This project is a responsive landing page designed and developed using HTML, SCSS, and JavaScript. The layout includes a navigation menu, a hero section with an image and call to action button, a feature section with four different features, a promotional section, and a testimonials section. 
 
